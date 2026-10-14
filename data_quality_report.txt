@@ -1,0 +1,32 @@
+HIT140 Assignment 3 — data quality report
+==========================================
+World Cup match rows: 104 (expected 104)
+Model 2.1 rows: 104 (expected 104)
+Model 2.1 explanatory variables: 8 (expected 8)
+Model 2.2 rows: 208 (expected 208)
+Model 2.2 explanatory variables: 8 (expected 8)
+Model 2.1 missing predictor cells: 0
+Model 2.2 missing predictor cells: 0
+Teams missing a ranking: []
+Team-fixture combinations with no prior history: []
+
+Feature definitions:
+- Last-five rates/averages use the most recent five international matches
+  with a calendar date strictly before the World Cup fixture date.
+- If fewer than five earlier matches exist, available matches are used;
+  inspect the *_history_matches_used columns.
+- FIFA rankings are the 1 April 2026 pre-tournament snapshot.
+- Model 2.1 target is goal_difference = team A goals - team B goals.
+- Model 2.2 has two rows per match; target is goals_scored by that team.
+
+Source links:
+FIFA official statistics: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/statistics
+FIFA fixtures/results: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums
+The Stats Don't Lie: https://www.thestatsdontlie.com/football/world-cup-2026/
+FBref: https://fbref.com/en/
+Structured 2026 match data (OpenFootball): https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json
+International results history (Mart Jürisoo): https://raw.githubusercontent.com/martj42/international_results/master/results.csv
+April 2026 ranking report (ESPN): https://www.espn.co.uk/football/story/_/id/46664763/fifa-mens-top-50-world-rankings
+
+Caution: review all missing values and name mappings before modelling.
+Do not use same-match shots, possession, cards, or other in-game stats as predictors.

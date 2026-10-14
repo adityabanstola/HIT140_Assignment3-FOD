@@ -1,0 +1,105 @@
+match_id,date,round,team_a,team_b,team_a_goals,team_b_goals,goal_difference,venue,source_team_a_name,source_team_b_name
+1,2026-06-11,Matchday 1,Mexico,South Africa,2,0,2,Mexico City,Mexico,South Africa
+2,2026-06-11,Matchday 1,South Korea,Czech Republic,2,1,1,Guadalajara (Zapopan),South Korea,Czech Republic
+7,2026-06-12,Matchday 2,Canada,Bosnia and Herzegovina,1,1,0,Toronto,Canada,Bosnia & Herzegovina
+19,2026-06-12,Matchday 2,USA,Paraguay,4,1,3,Los Angeles (Inglewood),USA,Paraguay
+8,2026-06-13,Matchday 3,Qatar,Switzerland,1,1,0,San Francisco Bay Area (Santa Clara),Qatar,Switzerland
+13,2026-06-13,Matchday 3,Brazil,Morocco,1,1,0,New York/New Jersey (East Rutherford),Brazil,Morocco
+14,2026-06-13,Matchday 3,Haiti,Scotland,0,1,-1,Boston (Foxborough),Haiti,Scotland
+20,2026-06-13,Matchday 3,Australia,Turkey,2,0,2,Vancouver,Australia,Turkey
+25,2026-06-14,Matchday 4,Germany,Curaçao,7,1,6,Houston,Germany,Curaçao
+26,2026-06-14,Matchday 4,Ivory Coast,Ecuador,1,0,1,Philadelphia,Ivory Coast,Ecuador
+31,2026-06-14,Matchday 4,Netherlands,Japan,2,2,0,Dallas (Arlington),Netherlands,Japan
+32,2026-06-14,Matchday 4,Sweden,Tunisia,5,1,4,Monterrey (Guadalupe),Sweden,Tunisia
+37,2026-06-15,Matchday 5,Belgium,Egypt,1,1,0,Seattle,Belgium,Egypt
+38,2026-06-15,Matchday 5,Iran,New Zealand,2,2,0,Los Angeles (Inglewood),Iran,New Zealand
+43,2026-06-15,Matchday 5,Spain,Cape Verde,0,0,0,Atlanta,Spain,Cape Verde
+44,2026-06-15,Matchday 5,Saudi Arabia,Uruguay,1,1,0,Miami (Miami Gardens),Saudi Arabia,Uruguay
+49,2026-06-16,Matchday 6,France,Senegal,3,1,2,New York/New Jersey (East Rutherford),France,Senegal
+50,2026-06-16,Matchday 6,Iraq,Norway,1,4,-3,Boston (Foxborough),Iraq,Norway
+55,2026-06-16,Matchday 6,Argentina,Algeria,3,0,3,Kansas City,Argentina,Algeria
+56,2026-06-16,Matchday 6,Austria,Jordan,3,1,2,San Francisco Bay Area (Santa Clara),Austria,Jordan
+61,2026-06-17,Matchday 7,Portugal,DR Congo,1,1,0,Houston,Portugal,DR Congo
+62,2026-06-17,Matchday 7,Uzbekistan,Colombia,1,3,-2,Mexico City,Uzbekistan,Colombia
+67,2026-06-17,Matchday 7,England,Croatia,4,2,2,Dallas (Arlington),England,Croatia
+68,2026-06-17,Matchday 7,Ghana,Panama,1,0,1,Toronto,Ghana,Panama
+3,2026-06-18,Matchday 8,Czech Republic,South Africa,1,1,0,Atlanta,Czech Republic,South Africa
+4,2026-06-18,Matchday 8,Mexico,South Korea,1,0,1,Guadalajara (Zapopan),Mexico,South Korea
+9,2026-06-18,Matchday 8,Switzerland,Bosnia and Herzegovina,4,1,3,Los Angeles (Inglewood),Switzerland,Bosnia & Herzegovina
+10,2026-06-18,Matchday 8,Canada,Qatar,6,0,6,Vancouver,Canada,Qatar
+15,2026-06-19,Matchday 9,Scotland,Morocco,0,1,-1,Boston (Foxborough),Scotland,Morocco
+16,2026-06-19,Matchday 9,Brazil,Haiti,3,0,3,Philadelphia,Brazil,Haiti
+21,2026-06-19,Matchday 9,USA,Australia,2,0,2,Seattle,USA,Australia
+22,2026-06-19,Matchday 9,Turkey,Paraguay,0,1,-1,San Francisco Bay Area (Santa Clara),Turkey,Paraguay
+27,2026-06-20,Matchday 10,Germany,Ivory Coast,2,1,1,Toronto,Germany,Ivory Coast
+28,2026-06-20,Matchday 10,Ecuador,Curaçao,0,0,0,Kansas City,Ecuador,Curaçao
+33,2026-06-20,Matchday 10,Netherlands,Sweden,5,1,4,Houston,Netherlands,Sweden
+34,2026-06-20,Matchday 10,Tunisia,Japan,0,4,-4,Monterrey (Guadalupe),Tunisia,Japan
+39,2026-06-21,Matchday 11,Belgium,Iran,0,0,0,Los Angeles (Inglewood),Belgium,Iran
+40,2026-06-21,Matchday 11,New Zealand,Egypt,1,3,-2,Vancouver,New Zealand,Egypt
+45,2026-06-21,Matchday 11,Spain,Saudi Arabia,4,0,4,Atlanta,Spain,Saudi Arabia
+46,2026-06-21,Matchday 11,Uruguay,Cape Verde,2,2,0,Miami (Miami Gardens),Uruguay,Cape Verde
+51,2026-06-22,Matchday 12,France,Iraq,3,0,3,Philadelphia,France,Iraq
+52,2026-06-22,Matchday 12,Norway,Senegal,3,2,1,New York/New Jersey (East Rutherford),Norway,Senegal
+57,2026-06-22,Matchday 12,Argentina,Austria,2,0,2,Dallas (Arlington),Argentina,Austria
+58,2026-06-22,Matchday 12,Jordan,Algeria,1,2,-1,San Francisco Bay Area (Santa Clara),Jordan,Algeria
+63,2026-06-23,Matchday 13,Portugal,Uzbekistan,5,0,5,Houston,Portugal,Uzbekistan
+64,2026-06-23,Matchday 13,Colombia,DR Congo,1,0,1,Guadalajara (Zapopan),Colombia,DR Congo
+69,2026-06-23,Matchday 13,England,Ghana,0,0,0,Boston (Foxborough),England,Ghana
+70,2026-06-23,Matchday 13,Panama,Croatia,0,1,-1,Toronto,Panama,Croatia
+5,2026-06-24,Matchday 14,Czech Republic,Mexico,0,3,-3,Mexico City,Czech Republic,Mexico
+6,2026-06-24,Matchday 14,South Africa,South Korea,1,0,1,Monterrey (Guadalupe),South Africa,South Korea
+11,2026-06-24,Matchday 14,Switzerland,Canada,2,1,1,Vancouver,Switzerland,Canada
+12,2026-06-24,Matchday 14,Bosnia and Herzegovina,Qatar,3,1,2,Seattle,Bosnia & Herzegovina,Qatar
+17,2026-06-24,Matchday 14,Scotland,Brazil,0,3,-3,Miami (Miami Gardens),Scotland,Brazil
+18,2026-06-24,Matchday 14,Morocco,Haiti,4,2,2,Atlanta,Morocco,Haiti
+23,2026-06-25,Matchday 15,Turkey,USA,3,2,1,Los Angeles (Inglewood),Turkey,USA
+24,2026-06-25,Matchday 15,Paraguay,Australia,0,0,0,San Francisco Bay Area (Santa Clara),Paraguay,Australia
+29,2026-06-25,Matchday 15,Curaçao,Ivory Coast,0,2,-2,Philadelphia,Curaçao,Ivory Coast
+30,2026-06-25,Matchday 15,Ecuador,Germany,2,1,1,New York/New Jersey (East Rutherford),Ecuador,Germany
+35,2026-06-25,Matchday 15,Japan,Sweden,1,1,0,Dallas (Arlington),Japan,Sweden
+36,2026-06-25,Matchday 15,Tunisia,Netherlands,1,3,-2,Kansas City,Tunisia,Netherlands
+41,2026-06-26,Matchday 16,Egypt,Iran,1,1,0,Seattle,Egypt,Iran
+42,2026-06-26,Matchday 16,New Zealand,Belgium,1,5,-4,Vancouver,New Zealand,Belgium
+47,2026-06-26,Matchday 16,Cape Verde,Saudi Arabia,0,0,0,Houston,Cape Verde,Saudi Arabia
+48,2026-06-26,Matchday 16,Uruguay,Spain,0,1,-1,Guadalajara (Zapopan),Uruguay,Spain
+53,2026-06-26,Matchday 16,Norway,France,1,4,-3,Boston (Foxborough),Norway,France
+54,2026-06-26,Matchday 16,Senegal,Iraq,5,0,5,Toronto,Senegal,Iraq
+59,2026-06-27,Matchday 17,Algeria,Austria,3,3,0,Kansas City,Algeria,Austria
+60,2026-06-27,Matchday 17,Jordan,Argentina,1,3,-2,Dallas (Arlington),Jordan,Argentina
+65,2026-06-27,Matchday 17,Colombia,Portugal,0,0,0,Miami (Miami Gardens),Colombia,Portugal
+66,2026-06-27,Matchday 17,DR Congo,Uzbekistan,3,1,2,Atlanta,DR Congo,Uzbekistan
+71,2026-06-27,Matchday 17,Panama,England,0,2,-2,New York/New Jersey (East Rutherford),Panama,England
+72,2026-06-27,Matchday 17,Croatia,Ghana,2,1,1,Philadelphia,Croatia,Ghana
+73,2026-06-28,Round of 32,South Africa,Canada,0,1,-1,Los Angeles (Inglewood),South Africa,Canada
+74,2026-06-29,Round of 32,Germany,Paraguay,2,2,0,Boston (Foxborough),Germany,Paraguay
+75,2026-06-29,Round of 32,Netherlands,Morocco,2,2,0,Monterrey (Guadalupe),Netherlands,Morocco
+76,2026-06-29,Round of 32,Brazil,Japan,2,1,1,Houston,Brazil,Japan
+77,2026-06-30,Round of 32,France,Sweden,3,0,3,New York/New Jersey (East Rutherford),France,Sweden
+78,2026-06-30,Round of 32,Ivory Coast,Norway,1,2,-1,Dallas (Arlington),Ivory Coast,Norway
+79,2026-06-30,Round of 32,Mexico,Ecuador,2,0,2,Mexico City,Mexico,Ecuador
+80,2026-07-01,Round of 32,England,DR Congo,2,1,1,Atlanta,England,DR Congo
+81,2026-07-01,Round of 32,USA,Bosnia and Herzegovina,2,0,2,San Francisco Bay Area (Santa Clara),USA,Bosnia & Herzegovina
+82,2026-07-01,Round of 32,Belgium,Senegal,5,4,1,Seattle,Belgium,Senegal
+83,2026-07-02,Round of 32,Portugal,Croatia,2,1,1,Toronto,Portugal,Croatia
+84,2026-07-02,Round of 32,Spain,Austria,3,0,3,Los Angeles (Inglewood),Spain,Austria
+85,2026-07-02,Round of 32,Switzerland,Algeria,2,0,2,Vancouver,Switzerland,Algeria
+86,2026-07-03,Round of 32,Argentina,Cape Verde,4,3,1,Miami (Miami Gardens),Argentina,Cape Verde
+87,2026-07-03,Round of 32,Colombia,Ghana,1,0,1,Kansas City,Colombia,Ghana
+88,2026-07-03,Round of 32,Australia,Egypt,2,2,0,Dallas (Arlington),Australia,Egypt
+89,2026-07-04,Round of 16,Paraguay,France,0,1,-1,Philadelphia,Paraguay,France
+90,2026-07-04,Round of 16,Canada,Morocco,0,3,-3,Houston,Canada,Morocco
+91,2026-07-05,Round of 16,Brazil,Norway,1,2,-1,New York/New Jersey (East Rutherford),Brazil,Norway
+92,2026-07-05,Round of 16,Mexico,England,2,3,-1,Mexico City,Mexico,England
+93,2026-07-06,Round of 16,Portugal,Spain,0,1,-1,Dallas (Arlington),Portugal,Spain
+94,2026-07-06,Round of 16,USA,Belgium,1,4,-3,Seattle,USA,Belgium
+95,2026-07-07,Round of 16,Argentina,Egypt,3,2,1,Atlanta,Argentina,Egypt
+96,2026-07-07,Round of 16,Switzerland,Colombia,0,0,0,Vancouver,Switzerland,Colombia
+97,2026-07-09,Quarter-final,France,Morocco,2,0,2,Boston (Foxborough),France,Morocco
+98,2026-07-10,Quarter-final,Spain,Belgium,2,1,1,Los Angeles (Inglewood),Spain,Belgium
+99,2026-07-11,Quarter-final,Norway,England,2,3,-1,Miami (Miami Gardens),Norway,England
+100,2026-07-11,Quarter-final,Argentina,Switzerland,4,2,2,Kansas City,Argentina,Switzerland
+101,2026-07-14,Semi-final,France,Spain,0,2,-2,Dallas (Arlington),France,Spain
+102,2026-07-15,Semi-final,England,Argentina,1,2,-1,Atlanta,England,Argentina
+103,2026-07-18,Match for third place,France,England,4,6,-2,Miami (Miami Gardens),France,England
+104,2026-07-19,Final,Spain,Argentina,1,0,1,New York/New Jersey (East Rutherford),Spain,Argentina

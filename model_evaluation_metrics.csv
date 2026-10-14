@@ -1,0 +1,3 @@
+model,target,test_rows,MAE,RMSE
+Model 2.1,Goal difference,21,1.2333286988241556,1.7046076125517806
+Model 2.2,Goals scored,42,1.0343109891488826,1.282448627622778
