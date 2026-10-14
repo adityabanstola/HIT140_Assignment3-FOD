@@ -91,6 +91,7 @@ ALIASES = {
     "mexico": "Mexico",
 }
 
+
 def norm_key(value):
     value = unicodedata.normalize("NFKD", str(value))
     value = "".join(ch for ch in value if not unicodedata.combining(ch))
@@ -99,17 +100,20 @@ def norm_key(value):
     value = re.sub(r"[^a-z0-9&' ]+", " ", value)
     return re.sub(r"\s+", " ", value).strip()
 
+
 def canonical_team(value):
     key = norm_key(value)
     # Alias keys are normalized too, so accent/case variants resolve consistently.
     aliases = {norm_key(k): v for k, v in ALIASES.items()}
     return aliases.get(key, str(value).strip())
 
+
 def download(url, destination):
     response = requests.get(url, timeout=90)
     response.raise_for_status()
     destination.write_bytes(response.content)
     return destination
+
 
 def read_world_cup_matches(path):
     payload = json.loads(path.read_text(encoding="utf-8"))
@@ -119,7 +123,7 @@ def read_world_cup_matches(path):
         ft = score.get("ft")
         if not ft or len(ft) != 2:
             raise ValueError(f"Missing full-time score for match {i}: {match}")
-        # In this source, 'et' records extra-time goals separately from regulation.
+        # In this source, "et" records extra-time goals separately from regulation.
         et = score.get("et", [0, 0]) or [0, 0]
         goals_a = int(ft[0]) + int(et[0])
         goals_b = int(ft[1]) + int(et[1])
@@ -136,10 +140,12 @@ def read_world_cup_matches(path):
             "source_team_a_name": match["team1"],
             "source_team_b_name": match["team2"],
         })
-    df = pd.DataFrame(rows).sort_values(["date", "match_id"]).reset_index(drop=True)
+    df = pd.DataFrame(rows).sort_values(
+        ["date", "match_id"]).reset_index(drop=True)
     if len(df) != 104:
         raise ValueError(f"Expected 104 World Cup matches, found {len(df)}.")
     return df
+
 
 def make_team_history(history_df):
     h = history_df.copy()
@@ -165,8 +171,9 @@ def make_team_history(history_df):
     out["clean_sheet"] = (out["goals_against"] == 0).astype(int)
     return out.sort_values(["date", "team"]).reset_index(drop=True)
 
+
 def recent_stats(team_history, team, fixture_date):
-    # Strictly earlier calendar dates only; this avoids same-day time leakage.
+    # Strictly earlier calendar dates only as this avoids same-day time leakage.
     prior = team_history[
         (team_history["team"] == team) &
         (team_history["date"] < pd.Timestamp(fixture_date))
@@ -190,6 +197,7 @@ def recent_stats(team_history, team, fixture_date):
         "loss_rate": float(last5["loss"].mean()),
     }
 
+
 def main():
     wc_path = download(WORLD_CUP_URL, RAW / "worldcup_2026_source.json")
     hist_path = download(HISTORY_URL, RAW / "international_results_source.csv")
@@ -202,7 +210,8 @@ def main():
 
     # Store the pre-tournament ranking lookup for transparent reproducibility.
     rank_df = pd.DataFrame(
-        [{"team": team, "fifa_rank_2026_04_01": rank} for team, rank in sorted(RANKS.items(), key=lambda x: x[1])]
+        [{"team": team, "fifa_rank_2026_04_01": rank}
+            for team, rank in sorted(RANKS.items(), key=lambda x: x[1])]
     )
     rank_df.to_csv(RAW / "fifa_rankings_april_2026.csv", index=False)
 
@@ -213,11 +222,16 @@ def main():
     for _, m in matches.iterrows():
         d = m["date"]
         a, b = m["team_a"], m["team_b"]
-        if a not in RANKS: rank_missing.add(a)
-        if b not in RANKS: rank_missing.add(b)
-        sa, sb = recent_stats(team_history, a, d), recent_stats(team_history, b, d)
-        if sa["n_history"] == 0: history_missing.append((d, a))
-        if sb["n_history"] == 0: history_missing.append((d, b))
+        if a not in RANKS:
+            rank_missing.add(a)
+        if b not in RANKS:
+            rank_missing.add(b)
+        sa, sb = recent_stats(team_history, a, d), recent_stats(
+            team_history, b, d)
+        if sa["n_history"] == 0:
+            history_missing.append((d, a))
+        if sb["n_history"] == 0:
+            history_missing.append((d, b))
 
         rows21.append({
             "match_id": m["match_id"], "date": d, "team_a": a, "team_b": b,
@@ -320,10 +334,14 @@ def main():
     (ROOT / "data_quality_report.txt").write_text("\n".join(lines), encoding="utf-8")
 
     print("Data collection complete.")
-    print(f"Matches: {len(matches)} | Model 2.1: {len(m21)} rows | Model 2.2: {len(m22)} rows")
-    print(f"Model 2.1 missing predictor cells: {int(m21[features21].isna().sum().sum())}")
-    print(f"Model 2.2 missing predictor cells: {int(m22[features22].isna().sum().sum())}")
+    print(
+        f"Matches: {len(matches)} | Model 2.1: {len(m21)} rows | Model 2.2: {len(m22)} rows")
+    print(
+        f"Model 2.1 missing predictor cells: {int(m21[features21].isna().sum().sum())}")
+    print(
+        f"Model 2.2 missing predictor cells: {int(m22[features22].isna().sum().sum())}")
     print("Read data_quality_report.txt and inspect the *_history_matches_used columns.")
+
 
 if __name__ == "__main__":
     main()
