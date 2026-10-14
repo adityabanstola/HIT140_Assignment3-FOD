@@ -28,5 +28,7 @@ Structured 2026 match data (OpenFootball): https://raw.githubusercontent.com/ope
 International results history (Mart Jürisoo): https://raw.githubusercontent.com/martj42/international_results/master/results.csv
 April 2026 ranking report (ESPN): https://www.espn.co.uk/football/story/_/id/46664763/fifa-mens-top-50-world-rankings
 
+
+
 Caution: review all missing values and name mappings before modelling.
 Do not use same-match shots, possession, cards, or other in-game stats as predictors.

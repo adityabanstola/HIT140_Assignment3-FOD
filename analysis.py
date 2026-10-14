@@ -7,8 +7,7 @@ Required CSV files in the same folder as this script:
 - model_2_1_goal_difference.csv
 - model_2_2_goals_scored.csv
 
-Run with:
-    python analysis.py
+Run with:python analysis.py
 """
 
 from pathlib import Path
@@ -59,9 +58,7 @@ print("\nMODEL 2.2 — GOALS SCORED")
 print("Shape:", model22.shape)
 print(model22.head().to_string(index=False))
 
-# ------------------------------------------------------------
-# 2. DEFINE AND VALIDATE PREDICTORS
-# ------------------------------------------------------------
+
 predictors_21 = [
     "team_a_fifa_rank",
     "team_b_fifa_rank",

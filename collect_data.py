@@ -2,8 +2,7 @@
 HIT140 Assignment 3 — Objective 2 data collection and feature engineering
 Run this script in VS Code with: python collect_data.py
 
-Dependencies:
-    pip install pandas requests
+Dependencies:pip install pandas requests
 
 Outputs:
     data_raw/worldcup_2026_source.json
