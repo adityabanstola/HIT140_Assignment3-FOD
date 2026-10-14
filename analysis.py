@@ -7,8 +7,7 @@ Required CSV files in the same folder as this script:
 - model_2_1_goal_difference.csv
 - model_2_2_goals_scored.csv
 
-Run with:
-    python analysis.py
+Run with:python analysis.py
 """
 
 from pathlib import Path
