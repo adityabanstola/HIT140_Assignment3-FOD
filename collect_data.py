@@ -1,26 +1,4 @@
-"""
-HIT140 Assignment 3 — Objective 2 data collection and feature engineering
-Run this script in VS Code with: python collect_data.py
 
-Dependencies:pip install pandas requests
-
-Outputs:
-    data_raw/worldcup_2026_source.json
-    data_raw/international_results_source.csv
-    data_raw/fifa_rankings_april_2026.csv
-    world_cup_2026_matches.csv                 (104 rows)
-    model_2_1_goal_difference.csv              (104 rows)
-    model_2_2_goals_scored.csv                 (208 rows)
-    data_quality_report.txt
-
-Important:
-- Historical features only use matches played before the fixture date.
-- Same-day matches are excluded from the historical feature window because the
-  historical results source has dates but not kickoff times.
-- FIFA rankings are from 1 April 2026, before the tournament.
-- Match scores include extra-time goals when recorded; penalty shoot-outs are
-  not counted as goals.
-"""
 
 from pathlib import Path
 import json

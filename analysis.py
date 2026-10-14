@@ -1,14 +1,4 @@
-"""
-HIT140 Assignment 3 — Objective 2
-Two linear regression models and three visualisations.
 
-Required CSV files in the same folder as this script:
-- world_cup_2026_matches.csv
-- model_2_1_goal_difference.csv
-- model_2_2_goals_scored.csv
-
-Run with:python analysis.py
-"""
 
 from pathlib import Path
 import warnings
@@ -266,11 +256,7 @@ plt.show()
 plt.close(fig)
 
 
-# 8. VISUALISATION 3 — STANDARDISED COEFFICIENT MAGNITUDES
-# Standardise using training data only so coefficient magnitudes
-# are more comparable across predictors measured on different scales.
-# These are still coefficient magnitudes, not causal importance.
-# ------------------------------------------------------------
+
 standardised_21 = make_pipeline(StandardScaler(), LinearRegression())
 standardised_21.fit(X21.iloc[train21], y21.iloc[train21])
 coef21 = standardised_21.named_steps["linearregression"].coef_
