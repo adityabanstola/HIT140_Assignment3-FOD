@@ -1,14 +1,4 @@
-"""
-HIT140 Assignment 3 — Objective 2
-Two linear regression models and three visualisations.
 
-Required CSV files in the same folder as this script:
-- world_cup_2026_matches.csv
-- model_2_1_goal_difference.csv
-- model_2_2_goals_scored.csv
-
-Run with:python analysis.py
-"""
 
 from pathlib import Path
 import warnings
@@ -175,7 +165,6 @@ print(model21[predictors_21].describe().round(3))
 print("\nMODEL 2.2 FEATURE SUMMARY")
 print(model22[predictors_22].describe().round(3))
 
-# ------------------------------------------------------------
 # 4. TRAIN AND EVALUATE MODEL 2.1
 # GroupShuffleSplit keeps each match entirely in train or test.
 # ------------------------------------------------------------
@@ -194,7 +183,7 @@ pred21 = model_21.predict(X21.iloc[test21])
 mae21 = mean_absolute_error(y21.iloc[test21], pred21)
 rmse21 = np.sqrt(mean_squared_error(y21.iloc[test21], pred21))
 
-# ------------------------------------------------------------
+
 # 5. TRAIN AND EVALUATE MODEL 2.2
 # Grouping prevents the two rows for a match being split across sets.
 # ------------------------------------------------------------
@@ -234,7 +223,7 @@ metrics = pd.DataFrame([
 ])
 metrics.to_csv(folder / "model_evaluation_metrics.csv", index=False)
 
-# ------------------------------------------------------------
+
 # 6. VISUALISATION 1 — MODEL 2.1 ACTUAL VS PREDICTED
 # ------------------------------------------------------------
 fig, ax = plt.subplots(figsize=(7, 5))
@@ -250,7 +239,7 @@ fig.savefig(folder / "model21_actual_vs_predicted.png", dpi=300)
 plt.show()
 plt.close(fig)
 
-# ------------------------------------------------------------
+
 # 7. VISUALISATION 2 — MODEL 2.2 ACTUAL VS PREDICTED
 # ------------------------------------------------------------
 fig, ax = plt.subplots(figsize=(7, 5))
@@ -266,12 +255,8 @@ fig.savefig(folder / "model22_actual_vs_predicted.png", dpi=300)
 plt.show()
 plt.close(fig)
 
-# ------------------------------------------------------------
-# 8. VISUALISATION 3 — STANDARDISED COEFFICIENT MAGNITUDES
-# Standardise using training data only so coefficient magnitudes
-# are more comparable across predictors measured on different scales.
-# These are still coefficient magnitudes, not causal importance.
-# ------------------------------------------------------------
+
+
 standardised_21 = make_pipeline(StandardScaler(), LinearRegression())
 standardised_21.fit(X21.iloc[train21], y21.iloc[train21])
 coef21 = standardised_21.named_steps["linearregression"].coef_
