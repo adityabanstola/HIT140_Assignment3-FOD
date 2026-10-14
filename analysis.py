@@ -90,7 +90,7 @@ print("Model 2.2 predictor count:", len(predictors_22))
 print("Model 2.1 missing predictor columns:", set(predictors_21) - set(model21.columns))
 print("Model 2.2 missing predictor columns:", set(predictors_22) - set(model22.columns))
 shared = set(predictors_21) & set(predictors_22)
-print("Shared predictors:", shared)
+print("Shared predictorss:", shared)
 print("Number of shared predictors:", len(shared))
 
 if len(predictors_21) != 8 or len(predictors_22) != 8:
@@ -98,9 +98,7 @@ if len(predictors_21) != 8 or len(predictors_22) != 8:
 if len(shared) > 4:
     raise ValueError("The models share more than four predictors.")
 
-# ------------------------------------------------------------
-# 3. TARGET, ROW, SCORE, HISTORY AND MISSING-VALUE CHECKS
-# ------------------------------------------------------------
+
 print("\nTARGET AND DATA QUALITY CHECKS")
 goal_difference_correct = (
     model21["goal_difference"]
